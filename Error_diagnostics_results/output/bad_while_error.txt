@@ -1,0 +1,37 @@
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 2
+Column  : 16
+Token   : ')'
+Hint    : Review syntax near current token.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Recovering at next semicolon
+Line    : 3
+Column  : 18
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 5
+Column  : 1
+Token   : '}'
+Hint    : Review syntax near current token.
+=========================================
+Starting MiniC LALR(1) Parsing...
+
+=== INPUT SOURCE PROGRAM ===
+int main() {
+    while (x < ) {
+        x = x + 1;
+    }
+}
+
+
+Parsing completed with recoverable errors.
+
+=== THREE ADDRESS CODE (QUADRUPLES) ===
+No.   | Statement                        | Op           | Arg1         | Arg2         | Result      
+-------------------------------------------------------------------------------------------------
+0     | label L1                         | label        |              |              | L1          

@@ -1,0 +1,27 @@
+
+===== LEXICAL ERROR =====
+Unclosed comment at line 6
+=========================
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 6
+Column  : 14
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+Starting MiniC LALR(1) Parsing...
+
+=== INPUT SOURCE PROGRAM ===
+int main() {
+    int x = 5;
+    /* this comment never closes
+    return x;
+}
+
+
+Parsing completed with recoverable errors.
+
+=== THREE ADDRESS CODE (QUADRUPLES) ===
+No.   | Statement                        | Op           | Arg1         | Arg2         | Result      
+-------------------------------------------------------------------------------------------------
+0     | x = 5                            | =            | 5            |              | x           

@@ -1,0 +1,23 @@
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Extra semicolon
+Line    : 2
+Column  : 15
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+Starting MiniC LALR(1) Parsing...
+
+=== INPUT SOURCE PROGRAM ===
+int main() {
+    int x = 5;;
+    return x;
+}
+
+
+Parsing completed with recoverable errors.
+
+=== THREE ADDRESS CODE (QUADRUPLES) ===
+No.   | Statement                        | Op           | Arg1         | Arg2         | Result      
+-------------------------------------------------------------------------------------------------
+0     | x = 5                            | =            | 5            |              | x           
+1     | return x                         | return       | x            |              |             

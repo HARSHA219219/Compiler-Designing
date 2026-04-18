@@ -1,0 +1,80 @@
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 4
+Column  : 13
+Token   : '*'
+Hint    : Invalid arithmetic expression near '*'.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Recovering at next semicolon
+Line    : 4
+Column  : 16
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 9
+Column  : 9
+Token   : 'else'
+Hint    : 'else' may not match any previous if.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Recovering at next semicolon
+Line    : 10
+Column  : 22
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 13
+Column  : 17
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Recovering at next semicolon
+Line    : 13
+Column  : 17
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+Starting MiniC LALR(1) Parsing...
+
+=== INPUT SOURCE PROGRAM ===
+int g = 10;
+
+int main() {
+    x = a + * 2;
+
+    if (x)
+        if (y)
+            z = z + 1
+        else
+            z = z * 2;
+
+    while (z)
+        z = z - ;
+
+    return ;
+}
+
+
+Parsing completed with recoverable errors.
+
+=== THREE ADDRESS CODE (QUADRUPLES) ===
+No.   | Statement                        | Op           | Arg1         | Arg2         | Result      
+-------------------------------------------------------------------------------------------------
+0     | g = 10                           | =            | 10           |              | g           
+1     | ifFalse x goto L1                | ifFalse      | x            |              | L1          
+2     | ifFalse y goto L2                | ifFalse      | y            |              | L2          
+3     | t1 = z + 1                       | +            | z            | 1            | t1          
+4     | z = t1                           | =            | t1           |              | z           
+5     | label L2                         | label        |              |              | L2          
+6     | label L1                         | label        |              |              | L1          
+7     | label L3                         | label        |              |              | L3          
+8     | ifFalse z goto L4                | ifFalse      | z            |              | L4          
+9     | goto L3                          | goto         |              |              | L3          
+10    | label L4                         | label        |              |              | L4          
+11    | return                           | return       |              |              |             

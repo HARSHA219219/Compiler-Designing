@@ -1,0 +1,28 @@
+=========== ERROR DIAGNOSTICS ===========
+Message : syntax error
+Line    : 2
+Column  : 5
+Token   : 'else'
+Hint    : 'else' may not match any previous if.
+=========================================
+=========== ERROR DIAGNOSTICS ===========
+Message : Syntax error: Recovering at next semicolon
+Line    : 2
+Column  : 15
+Token   : ';'
+Hint    : Unexpected semicolon or missing expression before ';'.
+=========================================
+Starting MiniC LALR(1) Parsing...
+
+=== INPUT SOURCE PROGRAM ===
+int main() {
+    else x = 5;
+}
+
+
+Parsing completed with recoverable errors.
+
+=== THREE ADDRESS CODE (QUADRUPLES) ===
+No.   | Statement                        | Op           | Arg1         | Arg2         | Result      
+-------------------------------------------------------------------------------------------------
+(no quadruples generated)
