@@ -5,17 +5,15 @@
 **Course:** CS327 Compilers  
 **Assignment:** Intermediate Code Generation  
 **Instructor:** Shouvick Mondal  
-**Semester:** January-May 2026  
-**Submission Date:** April 18, 2026  
+**Semester:** January-May 2026   
 
 **Team Members**
 
 | Member | Roll No. | Contribution Area |
 |---|---|---|
-| Member 1 | `[Add Roll No.]` | Lexical analyzer and token design |
-| Member 2 | `[Add Roll No.]` | Grammar design and parsing |
-| Member 3 | `[Add Roll No.]` | TAC generation and control flow translation |
-| Member 4 | `[Add Roll No.]` | Testing, diagnostics, and documentation |
+| Rushitha Tipparapu | 23110338   | Lexical analyzer and token design         |
+| Sailaja Mudu                  | 23110288   | Grammar design and parsing                |
+| Vadithya Harsha Vardhan Nayak                           | 23110349 | TAC generation and control flow translation |
 
 ## 1. Objective
 
@@ -657,10 +655,9 @@ The work distribution can be presented in the following structured form:
 
 | Team Member | Responsibility |
 |---|---|
-| Member 1 | Designed and implemented the lexical analyzer in Lex/Flex, including keywords, identifiers, literals, operators, delimiters, comments, and lexical error detection |
-| Member 2 | Designed the Yacc/Bison grammar for MiniC, including declarations, expressions, statements, and control-flow constructs |
-| Member 3 | Implemented syntax-directed translation rules for TAC generation, including temporaries, labels, `if`, `if-else`, `while`, and `for` support |
-| Member 4 | Designed test cases, validated generated quadruples, collected output evidence, and prepared the final report and documentation |
+| Rushitha Tipparapu | Designed and implemented the lexical analyzer using Lex/Flex, including keywords, identifiers, literals, operators, delimiters, comments, and lexical error handling |
+| Sailaja Mudu | Designed the Yacc/Bison grammar for MiniC, covering declarations, expressions, statements, and control-flow constructs |
+| Vadithya Harsha Vardhan Nayak | Implemented syntax-directed translation (SDT) rules for TAC generation, including temporaries, labels, and support for if, if-else, while, and for constructs; also handled testing, validation of quadruples, and documentation |
 
 This section can be updated with actual names and roll numbers before submission.
 
